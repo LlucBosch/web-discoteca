@@ -1,0 +1,228 @@
+/*====================
+========Columns=======
+======================*/
+.desktop-one-column{
+    width: 100%;
+}
+
+.desktop-one-column .column{
+    width: 100%;
+}
+
+.desktop-two-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns .column{
+    width: 48%;
+}
+
+.desktop-three-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-three-columns .column{
+    width: 30%;
+}
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p, ul, li{
+    color: hsl(0, 0%, 100%);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Helvetica";
+}
+
+h6, li {
+    font-family: "Helvetica";
+}
+
+a, td, p, button, span{
+    font-family: "Helvetica";
+    text-decoration: none;
+}
+
+/*====================
+========Header========
+======================*/
+.header-main{
+    background-color: hsl(0, 0%, 0%);
+    padding: 0.5rem 5%;
+    width: 90%;
+    
+}
+
+.header-main .header-main-logo{
+    display: flex;
+}
+
+.header-main .header-main-logo svg{
+    width: 3.7rem;
+    color: hsl(0, 0%, 100%);
+    margin-top: 0.5rem;
+    margin-left: 20%;
+}
+.header-main .header-main-logo h1{
+    margin-top: 1.25rem;
+}
+
+.header-main .header-main-menu{
+    padding: 1rem 10%;
+    width: 90%;
+}
+
+.header-main .header-main-menu ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20%;
+}
+
+.header-main .header-main-menu ul li{
+    font-size: 1.2em;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    border-bottom: 0.063rem solid hsl(0, 0%, 100%);
+}
+
+.header-main .header-main-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .7s background-color;
+}
+
+.header-main .header-main-menu a:hover{
+    background-color: hsl(180, 1%, 30%);
+}
+
+/*====================
+===Section imagen=====
+======================*/
+.section-img{
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),url('../images/section-img.webp');
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-img-box{
+    width: 25%;
+    
+}
+
+.section-img-box-text{
+    text-align: center;
+    font-size: 28px;
+}
+
+.section-img-box-text h2{
+    color: white;
+    text-decoration: overline;
+    word-spacing: 1rem;
+}
+
+.section-img-box-button{
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-left: 16%;
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,color 0.2s ease-out;
+    cursor: pointer;
+}
+
+.section-img-box-button:hover{
+    background-color: hsl(180, 1%, 30%);
+    transition: background-color 0.3s ease-in,color 0.3s ease-in;
+}
+
+/*====================
+=======Servicios======
+======================*/
+.services{
+    justify-content: space-between;
+    padding: 2rem 10%;
+
+}
+
+.services-photo,.services-text, .services-button{
+    text-align: center;
+}
+
+.services-text h2,p, .services-button h3{
+    color: black;
+}
+
+.services-button{
+    margin-top: 1.5rem;
+    margin-left: 16%;
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,color 0.2s ease-out;
+    cursor: pointer;
+}
+
+.services-button:hover{
+    background-color: hsl(0, 0%, 79%);
+    transition: background-color 0.3s ease-in,color 0.3s ease-in;
+}
+
+/*====================
+=======Conocenos======
+======================*/
+.info{
+    background-color: black;
+    justify-content: space-between;
+    padding: 2rem 10%;
+}
+
+.info-text p{
+    color: white;
+    font-style: italic;
+}
+
+.info-photo img{
+    border-radius: 1000px;
+}
+
+/*====================
+=========Footer=======
+======================*/
+.footer{
+    width: 100%;
+    background-color: black;
+    border-top: solid 3px white;
+}
+
+.footer .footer-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.footer svg{
+    width: 3.7rem;
+    color: hsl(0, 0%, 100%);
+    margin-top: 0.5rem;
+    margin-left: 20%;
+}
