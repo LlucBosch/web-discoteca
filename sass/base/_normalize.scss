@@ -155,6 +155,10 @@
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
+
+  form{
+    margin: 0;
+  }
   
   button,
   input,
@@ -367,7 +371,6 @@ th {
 /* List
 ==============================================================================*/
 ol, ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding-left: 0;
 }
