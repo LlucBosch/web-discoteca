@@ -384,7 +384,7 @@ h1, h2, h3, h4, h5 {
   font-family: "Helvetica";
 }
 
-h6, li {
+h6, li, select {
   font-family: "Helvetica";
 }
 
@@ -493,6 +493,9 @@ footer .footer svg {
 }
 .desktop-two-columns-aside > .column-aside {
   width: 20%;
+}
+.desktop-two-columns-aside > .column-aside-tickets {
+  width: 21%;
 }
 .desktop-two-columns-aside > .column-main {
   width: 75%;
@@ -620,6 +623,87 @@ footer .footer svg {
 
 .info-photo img {
   border-radius: 1000px;
+}
+
+.column-aside-tickets {
+  border-right: solid 2.5px hsl(0deg, 0%, 0%);
+}
+
+.left-menu {
+  padding: 1.5rem 20%;
+  width: 90%;
+}
+.left-menu .left-menu-title h2 {
+  color: black;
+  font-size: 2.3rem;
+}
+.left-menu .left-menu-items {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-left: 1rem;
+}
+.left-menu .left-menu-items li {
+  box-shadow: inset 0 0 0 0 hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+.left-menu .left-menu-items li:hover {
+  box-shadow: inset 100px 0 0 0 hsl(0deg, 0%, 0%);
+  color: white;
+}
+
+.services-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0%;
+  margin-top: 0.5rem;
+  margin-right: 3rem;
+}
+.services-top .services-top-text p {
+  font-size: 1.2rem;
+}
+.services-top .services-top-filter select {
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.services-main {
+  justify-content: space-between;
+  padding: 0.5rem 0%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.services-main-target {
+  box-shadow: 6px 20px 10px black;
+  margin-bottom: 3rem;
+}
+
+.service-button-tickets {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  display: inline-block;
+  width: 100px;
+  padding: 8px 0%;
+  color: hsl(0deg, 0%, 0%);
+  border: 2px solid hsl(0deg, 0%, 0%);
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  cursor: pointer;
+}
+.service-button-tickets h3 {
+  color: black;
+}
+.service-button-tickets :hover {
+  background-color: hsl(0deg, 0%, 79%);
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 /*# sourceMappingURL=app.css.map */
