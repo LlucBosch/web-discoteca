@@ -404,11 +404,11 @@ header .header-main .header-main-logo {
 header .header-main .header-main-logo svg {
   width: 3.7rem;
   color: hsl(0deg, 0%, 100%);
-  margin-top: 0.5rem;
+  margin-top: 1.25rem;
   margin-left: 20%;
 }
 header .header-main .header-main-logo h1 {
-  margin-top: 1.25rem;
+  margin-top: 2rem;
 }
 header .header-main .header-main-menu {
   padding: 1rem 10%;
@@ -508,37 +508,39 @@ footer .footer svg {
 }
 
 /*====================
-========Section=======
+========Slider========
 ======================*/
-.section-img {
+.slider {
   width: 100%;
-  height: 550px;
-  background: linear-gradient(hsla(0deg, 0%, 0%, 0.5), hsla(0deg, 0%, 0%, 0.5)), url("../images/section-img.webp");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 48rem;
 }
-
-.section-img-box {
-  width: 25%;
+.slider .slider-image {
+  position: absolute;
+  z-index: 0;
+  filter: brightness(30%);
 }
-
-.section-img-box-text {
+.slider .slider-title {
+  position: absolute;
+  z-index: 1;
+  width: 30%;
+  top: 14rem;
+  left: 33%;
+  font-size: 32px;
   text-align: center;
-  font-size: 28px;
 }
-.section-img-box-text h2 {
+.slider .slider-title h2 {
   color: hsl(0deg, 0%, 100%);
   text-decoration: overline;
   word-spacing: 1rem;
 }
-
-.section-img-box-button {
+.slider .slider-button {
+  position: absolute;
+  z-index: 2;
   text-align: center;
-  margin-top: 1.5rem;
-  margin-left: 16%;
-  display: inline-block;
+  top: 47vh;
+  left: 39%;
   width: 200px;
   padding: 8px;
   color: hsl(0deg, 0%, 100%);
@@ -548,7 +550,7 @@ footer .footer svg {
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   cursor: pointer;
 }
-.section-img-box-button :hover {
+.slider .slider-button :hover {
   background-color: hsl(180deg, 1%, 30%);
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
@@ -558,18 +560,29 @@ footer .footer svg {
 ======================*/
 .services {
   justify-content: space-between;
-  padding: 2rem 10%;
+  padding: 0.5rem 5%;
+  margin-bottom: 2rem;
 }
 
-.services-photo, .services-text, .services-button {
+.service {
+  box-shadow: 6px 20px 10px black;
+}
+
+.service-title h2, .service-photo, .service-text, .service-button {
   text-align: center;
 }
 
-.services-text h2, p, .services-button h3 {
+.service-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-title h2, p, .service-button h3 {
   color: hsl(0deg, 0%, 0%);
 }
 
-.services-button {
+.service-button {
+  margin-bottom: 1rem;
   margin-top: 1.5rem;
   margin-left: 16%;
   display: inline-block;
@@ -582,7 +595,7 @@ footer .footer svg {
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   cursor: pointer;
 }
-.services-button :hover {
+.service-button :hover {
   background-color: hsl(0deg, 0%, 79%);
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
@@ -594,6 +607,10 @@ footer .footer svg {
   background-color: hsl(0deg, 0%, 0%);
   justify-content: space-between;
   padding: 2rem 10%;
+}
+
+.info-title {
+  margin-bottom: 1rem;
 }
 
 .info-text p {
