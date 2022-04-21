@@ -14,5 +14,20 @@
     h3{
         color: hsl(0, 0%, 0%);
     }
-}
 
+    .ticket-text-title{
+        margin-bottom: 1rem;
+    }
+    .ticket-text-price{
+        margin-bottom: 1rem;
+    }
+    
+    .ticket-text-description{
+        margin-bottom: 3rem;
+    }
+
+    .ticket-text-quantity-text{
+        font-weight: 600;
+        font-style: italic;
+    }
+}
