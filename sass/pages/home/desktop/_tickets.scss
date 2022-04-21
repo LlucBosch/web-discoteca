@@ -2,21 +2,24 @@
      border-right: solid 2.5px hsl(0, 0%, 0%);
 }
 
-.left-menu{
+.categories-menu{
+
     padding: 1.5rem 20%;
     width: 90%;
    
 
-    .left-menu-title{
+    .categories-menu-title{
         h2{
             color: black;
             font-size: 2.3rem;
         }
     }
-    .left-menu-items{
+
+    .categories-menu-items{
         font-size: 1.2rem;
         line-height: 2rem;
         margin-left: 1rem;
+
         li{
             box-shadow: inset 0 0 0 0 hsl(0, 0%, 0%);
             color: hsl(0, 0%, 0%);
@@ -25,19 +28,26 @@
             transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
             cursor: pointer;
         }
+
         li:hover{
             box-shadow: inset 100px 0 0 0 hsl(0, 0%, 0%);
             color: white;
         }
     }
 }
+
+.services{
+    border-left: 2px solid black;
+}
+
 .services-top{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 0%;
     margin-top: 0.5rem;
     margin-right: 3rem;
-    .services-top-text p{
+
+    .services-top-item-counter p{
         font-size: 1.2rem;
     }
     
@@ -63,6 +73,7 @@
 }
 
 .service-button-tickets{
+
     margin-bottom: 1rem;
     margin-top: 1.5rem;
     display: inline-block;
@@ -74,11 +85,13 @@
     text-decoration: none;
     transition: background-color 0.2s ease-out,color 0.2s ease-out;
     cursor: pointer;
-    h3{
-        color: black;
-    }
-    :hover{
+
+    &:hover{
         background-color: hsl(0, 0%, 79%);
         transition: background-color 0.3s ease-in,color 0.3s ease-in;
     }
+
+    h3{
+        color: black;
+    }   
 }

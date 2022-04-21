@@ -47,12 +47,22 @@
         width: 20%;
     }
 
-    & > .column-aside-tickets{
-        width: 21%;
+    & > .column-main{
+        width: 75%;
+    }
+}
+
+.desktop-two-columns-aside-ticket{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .column-aside{
+        width: 45%;
     }
 
     & > .column-main{
-        width: 75%;
+        width: 50%;
     }
 }
 
