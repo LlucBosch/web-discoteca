@@ -1,3 +1,40 @@
+button span {
+  color: black;
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -174,6 +211,7 @@ button,
 input {
   /* 1 */
   overflow: visible;
+  padding: 0;
 }
 
 /**
@@ -376,7 +414,7 @@ video {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, a, p, ul, li {
+h1, h2, h3, h4, h5, h6, a, p, ul, li, label, span {
   color: hsl(0deg, 0%, 100%);
 }
 
@@ -384,13 +422,19 @@ h1, h2, h3, h4, h5 {
   font-family: "Helvetica";
 }
 
-h6, li, select {
+h6, li, select, label {
   font-family: "Helvetica";
 }
 
 a, td, p, button, span {
   font-family: "Helvetica";
   text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header .header-main {
@@ -435,6 +479,9 @@ header .header-main .header-main-menu a:hover {
   background-color: hsl(180deg, 1%, 30%);
 }
 
+footer {
+  margin-top: auto;
+}
 footer .footer {
   width: 100%;
   background-color: hsl(0deg, 0%, 0%);
@@ -517,6 +564,78 @@ footer .footer svg {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+form .form-element {
+  margin-bottom: 1rem;
+}
+form .form-element .form-element-label {
+  margin-bottom: 0.5rem;
+}
+form .form-element .form-element-label label {
+  font-size: 1.5rem;
+}
+form .form-element .form-element-input input {
+  height: 100%;
+  font-size: 1.2rem;
+  padding: 0.3rem 0 0.3rem 0.5rem;
+  width: 99%;
+}
+form .form-element .form-element-input textarea {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  width: 99%;
+}
+form .form-send-button {
+  width: max-content;
+  margin-left: auto;
+  padding-left: 62%;
+}
+form .form-send-button button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  background: rgb(255, 255, 255);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+form .form-send-button button span {
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+form .form-send-button button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+form .form-send-button button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+form .form-send-button button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+form .form-send-button button:hover span {
+  transform: translateX(5em);
+}
+form .form-send-button button:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
 }
 
 /*====================
@@ -760,116 +879,7 @@ footer .footer svg {
   cursor: pointer;
   font-family: inherit;
   font-size: 20px;
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  padding: 0.7em 1em;
-  padding-left: 0.9em;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.2s;
-}
-.ticket-text-button button span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
-}
-.ticket-text-button button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
-}
-.ticket-text-button button:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
-}
-.ticket-text-button button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
-}
-.ticket-text-button button:hover span {
-  transform: translateX(5em);
-}
-.ticket-text-button button:active {
-  transform: scale(0.95);
-}
-@keyframes fly-1 {
-  from {
-    transform: translateY(0.1em);
-  }
-  to {
-    transform: translateY(-0.1em);
-  }
-}
-
-.contact {
-  background-color: black;
-}
-
-.contact, label, h2 {
-  color: white;
-}
-
-.contact-title {
-  border-top: 2px solid white;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  text-align: center;
-}
-.contact-title h2 {
-  font-size: 3rem;
-}
-
-.contact-info {
-  padding-left: 20%;
-  margin-bottom: 14.3rem;
-}
-.contact-info .contact-info-text {
-  margin-bottom: 2rem;
-}
-.contact-info .contact-info-text span {
-  font-size: 1.5rem;
-}
-
-.contact-info-text svg {
-  width: 2rem;
-}
-
-.contact-form label {
-  font-size: 1.5rem;
-  font-family: Helvetica;
-}
-
-.contact-form-one {
-  padding-left: 3rem;
-  margin-bottom: 1rem;
-}
-.contact-form-one input {
-  height: 2rem;
-}
-
-.contact-form-two {
-  padding-right: 7rem;
-  margin-bottom: 1rem;
-}
-.contact-form-two input {
-  height: 2rem;
-}
-
-.contact-form-area {
-  padding-left: 3rem;
-  margin-bottom: 1rem;
-}
-
-.contact-form-button {
-  /* boton copiado */
-  padding-left: 62%;
-}
-.contact-form-button button {
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 20px;
-  background: rgb(255, 255, 255);
+  background: white;
   color: rgb(0, 0, 0);
   padding: 0.7em 1em;
   padding-left: 0.9em;
@@ -880,35 +890,176 @@ footer .footer svg {
   overflow: hidden;
   transition: all 0.2s;
 }
-.contact-form-button button span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
+
+.contact {
+  background-color: black;
+  min-height: 80vh;
+  padding: 0 10%;
+  width: 80%;
 }
-.contact-form-button button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
+.contact .contact-title {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
 }
-.contact-form-button button:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
+.contact .contact-title h2 {
+  font-size: 3rem;
 }
-.contact-form-button button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+.contact .contact-info .contact-info-text {
+  margin-bottom: 2rem;
 }
-.contact-form-button button:hover span {
-  transform: translateX(5em);
+.contact .contact-info .contact-info-text span {
+  font-size: 1.5rem;
 }
-.contact-form-button button:active {
-  transform: scale(0.95);
+.contact .contact-info .contact-info-text svg {
+  margin-right: 1rem;
+  width: 2rem;
 }
-@keyframes fly-1 {
-  from {
-    transform: translateY(0.1em);
-  }
-  to {
-    transform: translateY(-0.1em);
-  }
+.contact .contact-info .contact-info-text svg path {
+  fill: hsl(0deg, 0%, 100%);
+}
+
+.purchase {
+  background-color: black;
+  min-height: 80vh;
+  padding: 0 10%;
+  width: 80%;
+}
+
+.purchase-title h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.purchase-items table {
+  width: 100%;
+  font-size: 1.2rem;
+}
+.purchase-items table th {
+  color: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid white;
+}
+.purchase-items table td {
+  text-align: center;
+  color: white;
+  padding: 1rem 2rem;
+}
+.purchase-items table input {
+  width: 1.5rem;
+}
+.purchase-items table img {
+  width: 5rem;
+}
+
+.purchase-resume {
+  width: 30%;
+  margin-left: auto;
+}
+.purchase-resume table {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  margin-top: 2rem;
+}
+.purchase-resume table th {
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.5rem 1rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 100%);
+  color: black;
+  font-size: 1.5rem;
+}
+.purchase-resume table td {
+  text-align: center;
+  color: white;
+  padding: 1rem 2rem;
+}
+.purchase-resume .purchase-resume-total {
+  border-top: 1px solid white;
+}
+.purchase-resume .purchase-resume-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.purchase-resume .purchase-resume-buttons button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  background: white;
+  color: rgb(0, 0, 0);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.checkout {
+  background-color: black;
+  min-height: 80vh;
+  padding: 0 10%;
+  width: 80%;
+}
+.checkout .checkout-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.checkout .checkout-title h2 {
+  font-size: 2.5rem;
+}
+.checkout .checkout-info {
+  padding: 0 10%;
+  border-right: 3px solid white;
+}
+.checkout .checkout-payment-resume table {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  margin-top: 2rem;
+}
+.checkout .checkout-payment-resume table th {
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.5rem 1rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 100%);
+  color: black;
+  font-size: 1.5rem;
+}
+.checkout .checkout-payment-resume table td {
+  text-align: center;
+  color: white;
+  padding: 1rem 2rem;
+}
+.checkout .checkout-payment-resume-total {
+  border-top: 1px solid white;
+}
+.checkout .checkout-methods {
+  margin-top: 2rem;
+}
+.checkout .checkout-methods input {
+  margin-bottom: 2rem;
+}
+.checkout .checkout-button button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  background: white;
+  color: rgb(0, 0, 0);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
 }
 
 /*# sourceMappingURL=app.css.map */

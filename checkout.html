@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+		<link rel="shortcut icon" href="./images/icon.png">
+
+		<title>EYE</title>
+		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+        <meta name="keywords" 	 content="palabras clave, separadas, por comas">
+
+        <link href="style/app.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <!-- logo y menu bar -->
+            <div class="header-main">
+                <div class="desktop-two-columns">
+                    <div class="column">
+                        <div class="header-main-logo">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+                            </svg>
+                            <h1>EYE</h1>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="header-main-menu">
+                            <ul>
+                                <li><a href="index.html">INICIO</a></li>
+                                <li><a href="tickets.html">ENTRADAS</a></li>
+                                <li><a href="contact.html">CONTACTO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+            
+            <div class="checkout">
+                <div class="checkout-title">
+                    <h2>Finalizar compra</h2>
+                </div>
+                <div class="desktop-two-columns">
+                    <div class="column">
+                        <div class="checkout-info">
+                            <form>
+                                <div class="desktop-two-columns">
+                                    <div class="column">
+                                        <div class="form-element">
+                                            <div class="form-element-label">
+                                                <label>Nombre</label>
+                                            </div>
+                                            <div class="form-element-input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="form-element">
+                                            <div class="form-element-label">
+                                                <label>Apellidos</label>
+                                            </div>
+                                            <div class="form-element-input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desktop-two-columns">
+                                    <div class="column">
+                                        <div class="form-element">
+                                            <div class="form-element-label">
+                                                <label>Teléfono</label>
+                                            </div>
+                                            <div class="form-element-input">
+                                                <input type="tel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="form-element">
+                                            <div class="form-element-label">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="form-element-input">
+                                                <input type="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desktop-two-columns">
+                                    <div class="column">
+                                        <div class="form-element">
+                                            <div class="form-element-label">
+                                                <label>Ciudad</label>
+                                            </div>
+                                            <div class="form-element-input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="form-element">
+                                            <div class="form-element-label">
+                                                <label>Código postal</label>
+                                            </div>
+                                            <div class="form-element-input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desktop-one-column">
+                                    <div class="column">
+                                        <div class="form-element">
+                                            <div class="form-element-label">
+                                                <label>Dirección</label>
+                                            </div>
+                                            <div class="form-element-input">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="column">
+                            <div class="checkout-payment">
+                                <div class="checkout-payment-resume">
+                                    <table>
+                                        <tr>
+                                            <th colspan="2">Resumen de la compra</th>
+                                        </tr>
+                                        <tr>
+                                            <td>IVA</td>
+                                            <td>5 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transporte</td>
+                                            <td>0 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="checkout-payment-resume-total">Total</td>
+                                            <td class="checkout-payment-resume-total">55 €</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </div>
+                        <div class="checkout-methods">
+                            <div class="checkout-methods-radio">
+                                <input type="radio" name="payment" value="Transferencia Bancaria">
+                                <label>Transferencia Bancaria</label>
+                            </div>
+                            <div class="checkout-methods-radio">
+                                <input type="radio" name="payment" value="Paypal">
+                                <label>Paypal</label>
+                            </div>
+                            <div class="checkout-methods-radio" >
+                                <input type="radio" name="payment" value="Tarjeta de crédito">
+                                <label>Tarjeta de crédito</label>
+                            </div>
+                        </div>
+                        <div class="checkout-button">
+                            <button>
+                                <div class="svg-wrapper-1">
+                                    <div class="svg-wrapper">
+                                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M21 9V6H7V9H21M21 3A2 2 0 0 1 23 5V15A2 2 0 0 1 21 17H7A2 2 0 0 1 5 15V5A2 2 0 0 1 7 3H21M3 19H18V21H3A2 2 0 0 1 1 19V8H3Z" />
+                                        </svg>
+                                    </div>
+                                  </div>
+                                  <span>Pagar</span>
+                            </button>
+                        </div>
+                </div>
+            </div>
+
+            
+
+        </main>
+                    <footer>
+                <div class="footer">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+                        </svg>
+                        <h1>EYE</h1>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>

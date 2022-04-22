@@ -1,0 +1,85 @@
+.purchase{
+    background-color: black;
+    min-height: 80vh;
+    padding: 0 10%;
+    width: 80%;
+}
+
+.purchase-title{
+    h2{
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+.purchase-items{
+    table{
+        
+        width: 100%;
+        font-size: 1.2rem;
+        
+        th{
+            color: white;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid white;
+        }
+
+        td{
+            text-align: center;
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        input{
+            width: 1.5rem;
+        }
+        
+        img{
+            width: 5rem;
+        }
+    }
+}
+
+.purchase-resume{
+    width: 30%;
+    margin-left: auto;
+    table{
+        width: 100%;
+        font-size: 1rem;
+        border: 1px solid hsl(0, 0%, 100%);
+        margin-top: 2rem;
+        th{
+            color: hsl(0, 0%, 100%);
+            padding: 0.5rem 1rem;
+            border: 1px solid hsl(0, 0%, 100%);
+            background-color: hsl(0, 0%, 100%);
+            color: black;
+            font-size: 1.5rem;
+        }
+
+        td{
+            text-align: center;
+            color: white;
+            padding: 1rem 2rem;
+        }
+    }
+
+    .purchase-resume-total{
+        border-top: 1px solid white;
+    }
+
+    .purchase-resume-buttons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        
+        button {
+            @include button-effect;
+           }
+    }
+
+}
+
