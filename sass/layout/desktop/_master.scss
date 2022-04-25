@@ -7,3 +7,12 @@ body{
 main{
 
 }
+
+.desktop-only{
+    display: revert;
+}
+
+.mobile-only{
+
+    display: none;
+}

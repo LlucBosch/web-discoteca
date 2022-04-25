@@ -1,0 +1,134 @@
+/*====================
+========Slider========
+======================*/
+.slider{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 39rem;
+    
+
+    .slider-image{
+        position: absolute;
+        z-index: 0;
+        filter: brightness(30%);
+    }
+    .slider-title{
+        position: absolute;
+        z-index: 1;
+        width: 70%;
+        top: 5rem;
+        left: 16%;
+        font-size: 32px;
+        text-align: center;
+        
+        h2{
+            color: hsl(0, 0%, 100%);
+            text-decoration: overline;
+            word-spacing: 1rem;
+        }
+    }
+
+    .slider-button{
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        top: 50vh;
+        left: 23%;
+        width: 200px;
+        padding: 8px;
+        color: hsl(0, 0%, 100%);
+        border: 2px solid hsl(0, 0%, 100%);
+        outline: none;
+        text-decoration: none;
+        transition: background-color 0.2s ease-out,color 0.2s ease-out;
+        cursor: pointer;
+    
+        :hover{
+            background-color: hsl(180, 1%, 30%);
+            transition: background-color 0.3s ease-in,color 0.3s ease-in;
+        }
+    }
+}
+
+/*====================
+========Services======
+======================*/
+.services{
+    width: 80%;
+    justify-content: space-between;
+    padding: 0.5rem 10%;
+    margin-bottom: 2rem;
+}
+
+.service{
+    box-shadow: 0px 0px 10px 0px #333 inset;
+    margin-bottom: 5rem;
+}
+
+.service-title h2,.service-photo,.service-text, .service-button{
+    text-align: center;
+}
+
+.service-photo{
+    padding-top: 1rem;
+}
+
+.service-title{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-text{
+    padding-left: 0.5rem;
+    padding: 0.5rem;
+}
+.service-title h2,p, .service-button h3{
+    color: hsl(0, 0%, 0%);
+}
+
+
+
+.service-button{
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 16%;
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: hsl(0, 0%, 0%);
+    border: 2px solid hsl(0, 0%, 0%);
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,color 0.2s ease-out;
+    cursor: pointer;
+
+    :hover{
+        background-color: hsl(0, 0%, 79%);
+        transition: background-color 0.3s ease-in,color 0.3s ease-in;
+    }
+}
+
+/*====================
+=========Info=========
+======================*/
+.info{
+    background-color: hsl(0, 0%, 0%);
+    justify-content: space-between;
+    padding: 2rem 10%;
+}
+
+.info-title{
+    margin-bottom: 1rem;
+}
+
+.info-text p{
+    color: hsl(0, 0%, 100%);
+    font-style: italic;
+}
+
+.info-photo img{
+    border-radius: 1000px;
+    margin-bottom: 1rem;
+}
+
