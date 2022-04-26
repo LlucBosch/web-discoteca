@@ -439,6 +439,8 @@ header .header-main {
   background-color: hsl(0deg, 0%, 0%);
   padding: 0.5rem 5%;
   width: 90%;
+  z-index: 5001;
+  position: relative;
 }
 header .header-main .header-main-logo {
   display: flex;
@@ -506,7 +508,7 @@ header .header-main .header-main-menu .active .line3 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 5000;
 }
 .mobile-menu ul {
   align-items: center;
@@ -516,7 +518,7 @@ header .header-main .header-main-menu .active .line3 {
 }
 .mobile-menu li {
   margin-bottom: 20%;
-  z-index: 1;
+  z-index: 5000;
   cursor: pointer;
   font-family: Helvetica;
   font-size: 1.5rem;
@@ -606,12 +608,12 @@ footer .footer svg {
 }
 .slider .slider-image {
   position: absolute;
-  z-index: 0;
+  z-index: 1000;
   filter: brightness(30%);
 }
 .slider .slider-title {
   position: absolute;
-  z-index: 1;
+  z-index: 1001;
   width: 70%;
   top: 5rem;
   left: 16%;
@@ -625,7 +627,7 @@ footer .footer svg {
 }
 .slider .slider-button {
   position: absolute;
-  z-index: 2;
+  z-index: 1001;
   text-align: center;
   top: 50vh;
   left: 23%;

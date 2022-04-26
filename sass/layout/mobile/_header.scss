@@ -3,8 +3,8 @@ header{
         background-color: hsl(0, 0%, 0%);
         padding: 0.5rem 5%;
         width: 90%;
-        
-
+        z-index: $z-index-header;
+        position: relative;
         .header-main-logo{
             display: flex;
 
@@ -38,7 +38,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: $z-index-header-menu;
     
     ul{
 
@@ -51,7 +51,7 @@ header{
     li{
 
         margin-bottom: 20%;
-        z-index: 1;
+        z-index: $z-index-header-menu;
         cursor: pointer;
         font-family: Helvetica;
         font-size: 1.5rem;

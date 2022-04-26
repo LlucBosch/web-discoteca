@@ -10,12 +10,12 @@
 
     .slider-image{
         position: absolute;
-        z-index: 0;
+        z-index: $z-index-slider-image;
         filter: brightness(30%);
     }
     .slider-title{
         position: absolute;
-        z-index: 1;
+        z-index: $z-index-slider-elements;
         width: 70%;
         top: 5rem;
         left: 16%;
@@ -31,7 +31,7 @@
 
     .slider-button{
         position: absolute;
-        z-index: 2;
+        z-index: $z-index-slider-elements;
         text-align: center;
         top: 50vh;
         left: 23%;

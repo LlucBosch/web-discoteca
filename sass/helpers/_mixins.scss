@@ -310,11 +310,11 @@
     }
 }
 
-@mixin button-effect {
+@mixin button-effect($color) {
   cursor: pointer;
   font-family: inherit;
   font-size: 20px;
-  background: hsl(0, 0%, 100%);
+  background-color: $color;
   color: hsl(0, 0%, 0%);
   padding: 0.7em 1em;
   padding-left: 0.9em;
@@ -327,16 +327,16 @@
   }
   
   button span {
-  color: hsl(0, 0%, 0%);
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
+    color: hsl(0, 0%, 0%);
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
   }
   
   button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
   }
   
   button:hover .svg-wrapper {

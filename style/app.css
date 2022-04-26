@@ -1,5 +1,5 @@
 button span {
-  color: black;
+  color: hsl(0deg, 0%, 0%);
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
@@ -13,10 +13,6 @@ button svg {
 
 button:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
-}
-
-button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
 }
 
 button:hover span {
@@ -435,6 +431,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: black;
+}
+
+.desktop-only {
+  display: revert;
+}
+
+.mobile-only {
+  display: none;
 }
 
 header .header-main {
@@ -477,6 +482,54 @@ header .header-main .header-main-menu ul li a {
 }
 header .header-main .header-main-menu a:hover {
   background-color: hsl(180deg, 1%, 30%);
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.active .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.active .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.active .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 footer {
@@ -555,6 +608,18 @@ footer .footer svg {
 }
 .desktop-two-columns-aside-ticket > .column-main {
   width: 50%;
+}
+
+.desktop-two-columns-aside-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.desktop-two-columns-aside-panel > .column-aside {
+  width: 35%;
+}
+.desktop-two-columns-aside-panel > .column-main {
+  width: 65%;
 }
 
 .desktop-one-column {
@@ -871,6 +936,10 @@ form .form-send-button button:active {
   width: 1.5rem;
 }
 
+main {
+  background-color: white;
+}
+
 .ticket-text-button {
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -879,8 +948,8 @@ form .form-send-button button:active {
   cursor: pointer;
   font-family: inherit;
   font-size: 20px;
-  background: white;
-  color: rgb(0, 0, 0);
+  background-color: white;
+  color: hsl(0deg, 0%, 0%);
   padding: 0.7em 1em;
   padding-left: 0.9em;
   display: flex;
@@ -989,8 +1058,8 @@ form .form-send-button button:active {
   cursor: pointer;
   font-family: inherit;
   font-size: 20px;
-  background: white;
-  color: rgb(0, 0, 0);
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 0%);
   padding: 0.7em 1em;
   padding-left: 0.9em;
   display: flex;
@@ -1050,8 +1119,75 @@ form .form-send-button button:active {
   cursor: pointer;
   font-family: inherit;
   font-size: 20px;
-  background: white;
-  color: rgb(0, 0, 0);
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 0%);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.filters {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+.filters svg {
+  margin-top: 2rem;
+  width: 1.5rem;
+  color: hsl(0deg, 0%, 0%);
+}
+
+.menu {
+  padding-left: 70%;
+  padding-top: 0.5rem;
+}
+
+.panel {
+  background-color: black;
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+
+.panel-table {
+  color: white;
+  padding-left: 15%;
+  padding-top: 2%;
+}
+.panel-table table {
+  text-align: center;
+  width: 90%;
+}
+.panel-table table th {
+  border-bottom: 1px solid white;
+  font-size: 1.5rem;
+}
+.panel-table table td {
+  padding-top: 1rem;
+  font-style: italic;
+}
+
+.panel-button-table {
+  cursor: pointer;
+}
+.panel-button-table svg {
+  color: white;
+  width: 1.5rem;
+}
+
+.panel-form-buttons {
+  margin-top: 1rem;
+}
+.panel-form-buttons button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 0%);
   padding: 0.7em 1em;
   padding-left: 0.9em;
   display: flex;

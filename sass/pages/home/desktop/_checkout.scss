@@ -54,7 +54,7 @@
 
     .checkout-button{
         button {
-            @include button-effect;
+            @include button-effect(hsl(0, 0%, 100%));
            }
         }
     }
