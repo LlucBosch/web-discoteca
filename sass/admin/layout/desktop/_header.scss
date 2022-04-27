@@ -1,0 +1,125 @@
+header{
+    .header-main{
+        background-color: hsl(0, 0%, 0%);
+        padding: 0.5rem 5%;
+        width: 90%;
+        z-index: $z-index-header;
+        position: relative;
+        
+        .header-main-logo{
+            display: flex;
+
+            svg{
+                width: 3.7rem;
+                color: hsl(0, 0%, 100%);
+                margin-top: 1.25rem;
+                margin-left: 20%;
+            }
+            h1{
+                margin-top: 2rem;
+            }
+        }
+
+        .header-main-menu{
+            padding: 1rem 10%;
+            width: 90%;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                margin-right: 20%;
+            }
+            ul li{
+                font-size: 1.2em;
+                line-height: 2.5rem;
+                height: 2.5rem;
+                border-bottom: 0.063rem solid hsl(0, 0%, 100%);
+            }
+            ul li a{
+                text-decoration: none;
+                color: hsl(0, 0%, 100%);
+                display: block;
+                transition: .7s background-color;
+            }
+            a:hover{
+                background-color: hsl(180, 1%, 30%);
+            }            
+        }
+        
+    }
+}
+
+.header-main-panel{
+        
+    background-color: hsl(0, 0%, 0%);
+    padding: 0.5rem 5%;
+    width: 90%;
+    z-index: $z-index-header;
+    position: relative;
+
+    .header-main-logo{
+        display: flex;
+
+        svg{
+            width: 3.7rem;
+            color: hsl(0, 0%, 100%);
+            margin-top: 0.85rem;
+            margin-left: 10%;
+        }
+        h1{
+            margin-top: 1.60rem;
+        }
+    }
+
+    .header-main-menu{
+        padding: 1rem 10%;
+        width: 90%;
+        margin-left: auto;
+        width: max-content;
+        
+        @include menu-button
+        
+    }
+}
+
+#panelMenu{
+    background-color: hsl(0, 0%, 0%);
+    height: 93vh;
+    right: -100vh;
+    transition: right 0.5s;
+    position: fixed;
+    top: 0;
+    width: 40%;
+    z-index: $z-index-header-menu;
+    border-left: 5px solid grey;
+
+    &.active {
+        right: 0;
+        transition: right 0.5s;
+    }
+
+    ul{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 50% 30%;
+    }
+
+    li{
+
+        margin-bottom: 20%;
+        z-index: $z-index-header-menu;
+        cursor: pointer;
+        font-family: Helvetica;
+        font-size: 1.5rem;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+        color: hsl(0, 0%, 100%);
+
+        &:hover{
+            color: hsla(0, 0%, 27%, 0.588);
+        }   
+    }
+    
+}

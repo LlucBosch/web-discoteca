@@ -1,14 +1,25 @@
 @charset "utf-8";
 
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "base/contents";
-@import "base/normalize";
-@import "base/typography";
-@import "layout/mobile/master";
-@import "layout/mobile/header";
-@import "layout/mobile/footer";
-@import "layout/mobile/columns";
-@import "pages/home/mobile/home";
+// front
+@import "front/helpers/variables";
+@import "front/helpers/mixins";
+@import "front/base/contents";
+@import "front/base/normalize";
+@import "front/base/typography";
+@import "front/layout/mobile/master";
+@import "front/layout/mobile/header";
+@import "front/layout/mobile/footer";
+@import "front/layout/mobile/columns";
+@import "front/pages/home/mobile/home";
 
 
+// admin
+@import "admin/helpers/variables";
+@import "admin/helpers/mixins";
+@import "admin/base/contents";
+@import "admin/base/normalize";
+@import "admin/base/typography";
+@import "admin/layout/mobile/master";
+@import "admin/layout/mobile/header";
+@import "admin/layout/mobile/footer";
+@import "admin/layout/mobile/columns";

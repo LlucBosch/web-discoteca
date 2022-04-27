@@ -1,0 +1,20 @@
+footer{
+    margin-top: auto;
+    
+    .footer{
+        width: 100%;
+        background-color: hsl(0, 0%, 0%);
+        border-top: solid 3px hsl(0, 0%, 100%);
+
+        .footer-logo{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        svg{
+            width: 3.7rem;
+            color: hsl(0, 0%, 100%);
+        }
+    }
+}
