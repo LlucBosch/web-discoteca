@@ -77,7 +77,7 @@ header{
         margin-left: auto;
         width: max-content;
         
-        @include menu-button
+        @include menu-button-panel;
         
     }
 }

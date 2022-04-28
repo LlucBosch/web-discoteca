@@ -361,8 +361,8 @@
   }
 }
 
-@mixin menu-button {
-  .menu {
+@mixin menu-button-panel {
+  .menu-panel {
     background-color: transparent;
     border: none;
     cursor: pointer;
