@@ -956,6 +956,38 @@ main {
   transition: all 0.2s;
 }
 
+.tabs {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.tabs .tab {
+  padding: 1rem 1rem 1rem 1rem;
+  align-items: center;
+  cursor: pointer;
+  background-color: grey;
+}
+.tabs .tab.active {
+  background-color: white;
+  font-weight: 600;
+}
+
+.tab-related {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  display: none;
+}
+.tab-related li {
+  color: black;
+}
+.tab-related li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+.tab-related.active {
+  display: block;
+}
+
 .contact {
   background-color: black;
   min-height: 80vh;

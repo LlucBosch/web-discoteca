@@ -52,3 +52,37 @@
         @include button-effect(white);
     }
 }
+
+
+.tabs{
+    display: flex;
+    margin-bottom: 1rem;
+
+    .tab{
+        padding: 1rem 1rem 1rem 1rem;
+        align-items: center;
+        cursor: pointer;
+        background-color: grey;
+
+        &.active{
+        background-color: white;
+        font-weight: 600;
+    }
+    }
+    
+}
+
+.tab-related{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    display: none;
+    li{
+        color: black;
+    }
+    li:before{ content:"-"; position:relative; left:-5px;}
+
+    &.active{
+        display: block;
+    }
+
+}

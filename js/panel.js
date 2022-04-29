@@ -10,7 +10,6 @@ burgerButtonPanel.addEventListener("click", () => {
 });
 
 // filtros desplegables
-
 let buttonFilters = document.getElementById("buttonFilters");
 let filtersList = document.getElementById("filtersList");
 
