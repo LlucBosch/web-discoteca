@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <header>
         <div id="panelMenu">
             <ul>        
@@ -52,6 +53,9 @@
     </header>
 
     <main>
+        <div class="notification" id="notification">
+            <p>Los parámetros se han guardado correctamente!</p>
+        </div>
         <div class="filters">
                 <button id="buttonFilters">
                 <svg viewBox="0 0 24 24">
@@ -160,7 +164,7 @@
                                     </button>
                                 </div>
                                 <div class="column">
-                                    <button>
+                                    <button id="button-save-panel">
                                         <div class="svg-wrapper-1">
                                             <div class="svg-wrapper">
                                                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -176,11 +180,6 @@
                     </div>
                 </div>
                 <div class="column-main">
-                    <div class="tabs">
-                        <div class="tab active" data-number="one"><p>Descripción</p></div>
-                        <div class="tab" data-number="two"><p>Caracteristicas</p></div>
-                        <div class="tab" data-number="three"><p>Opiniones</p></div>
-                    </div>
                     <div class="tab-relateds">
                         <div class="panel-table">
                             <table>

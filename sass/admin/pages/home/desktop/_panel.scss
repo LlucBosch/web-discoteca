@@ -98,8 +98,26 @@
     button {
         @include button-effect(hsl(0, 0%, 100%));
        }
-
 }
+.notification{
+    position: absolute;
+    width: 25rem;
+    height: 8rem;
+    background-color: rgb(104, 139, 110);
+    text-align: center;
+    margin-left: -400px;
+    margin-top: 0.5rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    transition: 0.5s;
 
+    p{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+    }
 
-
+    &.active{
+        margin-left: 5rem;
+        transition: 0.5s;
+    }
+}

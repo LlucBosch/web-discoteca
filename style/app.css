@@ -2017,4 +2017,25 @@ form .form-send-button button:active {
   transition: all 0.2s;
 }
 
+.notification {
+  position: absolute;
+  width: 25rem;
+  height: 8rem;
+  background-color: rgb(104, 139, 110);
+  text-align: center;
+  margin-left: -400px;
+  margin-top: 0.5rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.notification p {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+.notification.active {
+  margin-left: 5rem;
+  transition: 0.5s;
+}
+
 /*# sourceMappingURL=app.css.map */
