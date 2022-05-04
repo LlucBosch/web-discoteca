@@ -1,14 +1,26 @@
-    export let notificationTransition = (seconds) => {
+    export let notificationTransition = (seconds, text, validate) => {
 
+        document.getElementById("notification").innerHTML = text;
 
-        
         let notification = document.getElementById("notification");
 
-        notification.classList.add("active");
+        if (validate == 'succes') {
 
-        setTimeout(function(){
-            notification.classList.remove("active");
-        }, seconds)
+            notification.classList.add("succes");
+
+            setTimeout(function(){
+                notification.classList.remove("succes");
+            }, seconds)
+
+        } else if (validate == 'error') {
+
+            notification.classList.add("error");
+
+            setTimeout(function(){
+                notification.classList.remove("error");
+            }, seconds)
+            
+        }
 
     }
 

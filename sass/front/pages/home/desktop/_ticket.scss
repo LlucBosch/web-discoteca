@@ -62,10 +62,10 @@
         padding: 1rem 1rem 1rem 1rem;
         align-items: center;
         cursor: pointer;
-        background-color: grey;
+        background-color: rgb(87, 86, 86);
 
         &.active{
-        background-color: white;
+        background-color: rgb(182, 182, 182);
         font-weight: 600;
     }
     }

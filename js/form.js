@@ -6,7 +6,7 @@ export let renderForm = () => {
 
     buttonSavePanel.addEventListener("click", () => {
 
-        notificationTransition(5000);
+        notificationTransition(5000,"<p>Parametros cambiados correctamente!!!</p>", 'error');
 
     })
 

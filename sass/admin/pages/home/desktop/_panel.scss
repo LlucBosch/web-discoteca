@@ -103,21 +103,32 @@
     position: absolute;
     width: 25rem;
     height: 8rem;
-    background-color: rgb(104, 139, 110);
     text-align: center;
-    margin-left: -400px;
-    margin-top: 0.5rem;
+    opacity: 0%;
+    margin-top: 34rem;
     border-radius: 3rem;
     font-weight: 600;
-    transition: 0.5s;
+    transition: 1s;
+    z-index: -1;
 
     p{
         margin-top: 2rem;
         font-size: 1.7rem;
     }
 
-    &.active{
+    &.succes{
         margin-left: 5rem;
-        transition: 0.5s;
+        transition: 1s;
+        background-color: hsl(120, 40%, 58%);
+        opacity: 100%;
+        z-index: 0;
+    }
+    &.error{
+        margin-left: 5rem;
+        transition: 1s;
+        background-color: hsl(0, 58%, 53%);
+        opacity: 100%;
+        z-index: 0;
     }
 }
+
