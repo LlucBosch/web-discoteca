@@ -1920,6 +1920,37 @@ form .form-send-button button:active {
   }
 }
 
+.notification {
+  position: absolute;
+  width: 25rem;
+  height: 8rem;
+  text-align: center;
+  opacity: 0%;
+  margin-top: 34rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  transition: 1s;
+  z-index: -1;
+}
+.notification p {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+.notification.success {
+  margin-left: 5rem;
+  transition: 1s;
+  background-color: hsl(120deg, 40%, 58%);
+  opacity: 100%;
+  z-index: 0;
+}
+.notification.error {
+  margin-left: 5rem;
+  transition: 1s;
+  background-color: hsl(0deg, 58%, 53%);
+  opacity: 100%;
+  z-index: 0;
+}
+
 .filters {
   width: 100%;
   background-color: white;
@@ -2017,35 +2048,57 @@ form .form-send-button button:active {
   transition: all 0.2s;
 }
 
-.notification {
-  position: absolute;
-  width: 25rem;
-  height: 8rem;
+.fileUpload {
+  background: #00bcbe;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #fff;
+  margin: 1.25em auto;
+  /*20px/16px 0*/
+  overflow: hidden;
+  padding: 0.875em;
+  /*14px/16px*/
+  position: relative;
   text-align: center;
-  opacity: 0%;
-  margin-top: 34rem;
-  border-radius: 3rem;
-  font-weight: 600;
-  transition: 1s;
-  z-index: -1;
+  width: 60px;
+  cursor: pointer;
 }
-.notification p {
-  margin-top: 2rem;
-  font-size: 1.7rem;
+.fileUpload.active svg {
+  display: none;
 }
-.notification.succes {
-  margin-left: 5rem;
-  transition: 1s;
-  background-color: hsl(120deg, 40%, 58%);
-  opacity: 100%;
-  z-index: 0;
+
+.fileUpload:hover, .fileUpload:active, .fileUpload:focus {
+  background: #00a2a4;
+  cursor: pointer;
 }
-.notification.error {
-  margin-left: 5rem;
-  transition: 1s;
-  background-color: hsl(0deg, 58%, 53%);
-  opacity: 100%;
-  z-index: 0;
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 148px;
+  height: 46px;
+  cursor: pointer;
+}
+
+input[type=file] {
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

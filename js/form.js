@@ -1,14 +1,20 @@
-import { notificationTransition } from "./notification.js";
-
 export let renderForm = () => {
 
-    let buttonSavePanel = document.getElementById("button-save-panel");
+    let sendButton = document.getElementById("button-save-panel");
 
-    buttonSavePanel.addEventListener("click", () => {
+    if (sendButton) {
 
-        notificationTransition(5000,"<p>Parametros cambiados correctamente!!!</p>", 'error');
+        sendButton.addEventListener("click", () => {
 
-    })
+            document.dispatchEvent(new CustomEvent('message', {
+                detail: {
+                    text: 'Por favor, rellene el formulario',
+                    type: 'success'
+                }
+            }));
+
+        });
+    }
 
 }
 

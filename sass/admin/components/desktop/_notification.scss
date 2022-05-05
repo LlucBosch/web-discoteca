@@ -1,0 +1,32 @@
+.notification{
+    position: absolute;
+    width: 25rem;
+    height: 8rem;
+    text-align: center;
+    opacity: 0%;
+    margin-top: 34rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    transition: 1s;
+    z-index: -1;
+
+    p{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+    }
+
+    &.success{
+        margin-left: 5rem;
+        transition: 1s;
+        background-color: hsl(120, 40%, 58%);
+        opacity: 100%;
+        z-index: 0;
+    }
+    &.error{
+        margin-left: 5rem;
+        transition: 1s;
+        background-color: hsl(0, 58%, 53%);
+        opacity: 100%;
+        z-index: 0;
+    }
+}

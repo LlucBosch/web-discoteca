@@ -4,6 +4,8 @@ import {renderPanelFilters} from "./panel-filters.js";
 import { renderPlusMinus } from "./plus-minus.js";
 import {renderTabsTicket} from "./tabs-ticket.js";
 import {renderForm} from "./form.js";
+import { notificationTransition } from "./notification.js";
+import {uploadImage} from "./upload-image.js";
 
 
 renderMenuButton();
@@ -12,3 +14,5 @@ renderPanelFilters();
 renderPlusMinus();
 renderTabsTicket();
 renderForm();
+notificationTransition();
+uploadImage();

@@ -55,7 +55,9 @@
 
     <main>
 
-        <div class="notification" id="notification"></div>
+        <div class="notification" id="notification">
+            <p id="notification-message"></p>
+        </div>
 
         <div class="filters">
             <button id="buttonFilters">
@@ -78,10 +80,14 @@
         <div class="panel">
             <div class="desktop-two-columns-aside-panel">
                 <div class="column-aside">
-                        <div class="tabs">
-                            <div class="tab active" data-number="one"><p>Contenido</p></div>
-                            <div class="tab" data-number="two"><p>Imagenes</p></div>
+                    <div class="tabs">
+                        <div class="tab active" data-number="one">
+                            <p>Contenido</p>
                         </div>
+                        <div class="tab" data-number="two">
+                            <p>Imagenes</p>
+                        </div>
+                    </div>
                     <div class="panel-form">
                         <div class="panel-tabs-related">
                             <div class="tab-related active" data-number="one">
@@ -93,7 +99,7 @@
                                                     <label>Nombre</label>
                                                 </div>
                                                 <div class="form-element-input">
-                                                    <input type="text">
+                                                    <input type="text" id="name-input">
                                                 </div>
                                             </div>
                                         </div>
@@ -157,9 +163,15 @@
                                 </form>
                             </div>
                             <div class="tab-related" data-number="two">
-                                <input type="file">
+                                <div class="fileUpload">
+                                    <input type="file" class="upload" id="files" name="files[]" />
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M13.5,16V19H10.5V16H8L12,12L16,16H13.5M13,9V3.5L18.5,9H13Z" />
+                                    </svg>
+                                    <output id="list"></output>
+                                </div>
                             </div>
-
                         </div>
 
                         <div class="panel-form-buttons">
