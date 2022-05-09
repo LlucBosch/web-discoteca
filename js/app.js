@@ -6,6 +6,7 @@ import {renderTabsTicket} from "./tabs-ticket.js";
 import {renderForm} from "./form.js";
 import { notificationTransition } from "./notification.js";
 import {uploadImage} from "./upload-image.js";
+import {renderCkeditor} from "./ckeditor.js";
 
 
 renderMenuButton();
@@ -16,3 +17,4 @@ renderTabsTicket();
 renderForm();
 notificationTransition();
 uploadImage();
+renderCkeditor();
