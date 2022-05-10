@@ -1,0 +1,90 @@
+.categories-menu{
+   padding: 0rem 20%;
+   width: 90%;
+   margin-top: 1rem;
+   border-bottom: 3px solid black;
+
+   .categories-menu-title{
+       h2{
+           color: black;
+           font-size: 2rem;
+       }
+   }
+
+   .categories-menu-items{
+       font-size: 1.2rem;
+       line-height: 2rem;
+       margin-left: 1rem;
+       margin-bottom: 3rem;
+
+       li{
+           box-shadow: inset 0 0 0 0 hsl(0, 0%, 0%);
+           color: hsl(0, 0%, 0%);
+           transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+           cursor: pointer;
+       }
+
+       li:hover{
+           box-shadow: inset 100px 0 0 0 hsl(0, 0%, 0%);
+           color: white;
+       }
+   }
+}
+
+.services-top{
+
+   .services-top-item-counter p{
+       font-size: 1.2rem;
+   }
+   
+   .services-top-filter select{
+       width: 200px;
+       height: 40px;
+       font-size: 1.2rem;
+       border-radius: 100px;
+       text-align: center;
+       margin-left: 3.5rem;
+   }
+}
+
+.services-main{
+   justify-content: space-between;
+   padding: 0.5rem 0%;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.services-main-target{
+   box-shadow: 6px 20px 10px black;
+   margin-bottom: 3rem;
+
+   .service-text{
+       p{
+           color: black;
+       }
+   }
+}
+
+.service-button-tickets{
+
+   margin-bottom: 1rem;
+   margin-top: 1.5rem;
+   display: inline-block;
+   width: 100px;
+   padding: 8px 0%;
+   color: hsl(0, 0%, 0%);
+   border: 2px solid hsl(0, 0%, 0%);
+   outline: none;
+   text-decoration: none;
+   transition: background-color 0.2s ease-out,color 0.2s ease-out;
+   cursor: pointer;
+
+   &:hover{
+       background-color: hsl(0, 0%, 79%);
+       transition: background-color 0.3s ease-in,color 0.3s ease-in;
+   }
+
+   h3{
+       color: black;
+   }   
+}

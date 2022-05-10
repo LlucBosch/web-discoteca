@@ -1,0 +1,99 @@
+.ticket-images{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    img{
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    }
+    
+}
+
+.ticket-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    h2{
+        color: black;
+        font-size: 3rem;
+    }
+}
+.ticket-price{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    h3{
+        color: black;
+    }
+}
+
+.ticket-text{
+    padding-top: 1rem;
+    padding-right: 2.5rem;
+    padding-left: 0.5rem;
+    text-align: center;
+    
+    p{
+        color: black;
+    }
+    
+    .ticket-text-description{
+        margin-bottom: 3rem;
+    }
+
+    .ticket-text-quantity-text{
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .ticket-text-quantity-input input{
+        width: 1.5rem;
+    }
+}
+
+    main{
+    background-color: white;
+}
+
+.ticket-text-button{
+    margin-bottom: 1rem;
+    margin-left: 6.5rem;
+    margin-top: 0.5rem;
+
+    button {
+        @include button-effect(white);
+    }
+}
+
+
+.tabs{
+    display: flex;
+    margin-bottom: 1rem;
+
+    .tab{
+        padding: 1rem 1rem 1rem 1rem;
+        align-items: center;
+        cursor: pointer;
+        background-color: rgb(87, 86, 86);
+
+        &.active{
+        background-color: rgb(182, 182, 182);
+        font-weight: 600;
+    }
+    }
+    
+}
+
+.tab-related{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    display: none;
+    li{
+        color: black;
+    }
+    li:before{ content:"-"; position:relative; left:-5px;}
+
+    &.active{
+        display: block;
+    }
+
+}
