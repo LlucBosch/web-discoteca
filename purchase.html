@@ -1,125 +1,130 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
-		<link rel="shortcut icon" href="./images/icon.png">
 
-		<title>EYE</title>
-		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
-        <meta name="keywords" 	 content="palabras clave, separadas, por comas">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+    <link rel="shortcut icon" href="./images/icon.png">
 
-        <!-- <link href="style/app.css" rel="stylesheet"> -->
-        <link href="style/mobile-app.css" rel="stylesheet">
-    </head>
-    
-    <body>
-        <header>
-            <!-- menu desplegable para movil -->
-            <div class="mobile-only" id="mobileMenu">
-                <ul>        
-                    <li>INICIO</li>
-                    <li>ENTRADAS</li>
-                    <li>CONTACTO</li>
-                </ul>
-            </div>
-            <!-- logo y menu bar -->
-            <div class="header-main">
-                <div class="desktop-two-columns mobile-two-columns">
-                    <div class="column">
-                        <div class="header-main-logo">
-                            <svg viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
-                            </svg>
-                            <h1>EYE</h1>
+    <title>EYE</title>
+    <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+    <meta name="keywords" content="palabras clave, separadas, por comas">
+
+    <!-- <link href="style/app.css" rel="stylesheet"> -->
+    <link href="style/mobile-app.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- menu desplegable para movil -->
+        <div class="mobile-only" id="mobileMenu">
+            <ul>
+                <li>INICIO</li>
+                <li>ENTRADAS</li>
+                <li>CONTACTO</li>
+            </ul>
+        </div>
+        <!-- logo y menu bar -->
+        <div class="header-main">
+            <div class="desktop-two-columns mobile-two-columns">
+                <div class="column">
+                    <div class="header-main-logo">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+                        </svg>
+                        <h1>EYE</h1>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="header-main-menu">
+                        <div class="desktop-only">
+                            <ul>
+                                <li><a href="index.html">INICIO</a></li>
+                                <li><a href="tickets.html">ENTRADAS</a></li>
+                                <li><a href="contact.html">CONTACTO</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-only">
+                            <button class="menu" id="burgerButton">
+                                <svg width="50" height="50" viewBox="0 0 100 100">
+                                    <path class="line line1"
+                                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                    <path class="line line2" d="M 20,50 H 80" />
+                                    <path class="line line3"
+                                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
-                    <div class="column">
-                            <div class="header-main-menu">
-                                <div class="desktop-only">
-                                <ul>
-                                    <li><a href="index.html">INICIO</a></li>
-                                    <li><a href="tickets.html">ENTRADAS</a></li>
-                                    <li><a href="contact.html">CONTACTO</a></li>
-                                </ul>
-                                </div>
-                                <div class="mobile-only">
-                                    <button class="menu" id="burgerButton">
-                                        <svg width="50" height="50" viewBox="0 0 100 100">
-                                          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                                          <path class="line line2" d="M 20,50 H 80" />
-                                          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                                        </svg>
-                                    </button>
-                                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="purchase">
+            <div class="purchase-title">
+                <h2>Carrito de la compra</h2>
+            </div>
+
+            <div class="purchase-items">
+                <table class="purchase-table">
+                    <tr>
+                        <th class="desktop-only"></th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                    <tr>
+                        <td class="desktop-only"><img src="./images/service1.webp" alt=""></td>
+                        <td>Satelite</td>
+                        <td>20 €</td>
+                        <td>
+                            <div class="plus-minus-button">
+                                <button class="minus-button">−</button>
+                                <input class="plus-minus-input" type="number" value="1" min="1" max="8">
+                                <button class="plus-button">+</button>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="desktop-only"><img src="./images/service2.webp" alt=""></td>
+                        <td>Euforia</td>
+                        <td>30 €</td>
+                        <td>
+                            <div class="plus-minus-button">
+                                <button class="minus-button">−</button>
+                                <input class="plus-minus-input" type="number" value="1" min="1" max="8">
+                                <button class="plus-button">+</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
-        </header>
 
-        <main>
-            
-            <div class="purchase">
-                    <div class="purchase-title">
-                        <h2>Carrito de la compra</h2>
-                    </div>
+            <div class="purchase-resume">
+                <table>
+                    <tr>
+                        <th colspan="2">Resumen de la compra</th>
+                    </tr>
+                    <tr>
+                        <td>IVA</td>
+                        <td>5 €</td>
+                    </tr>
+                    <tr>
+                        <td>Transporte</td>
+                        <td>0 €</td>
+                    </tr>
+                    <tr>
+                        <td class="purchase-resume-total">Total</td>
+                        <td class="purchase-resume-total">55 €</td>
+                    </tr>
+                </table>
 
-                <div class="purchase-items">
-                    <table class="purchase-table">
-                            <tr>
-                                <th></th>
-                                <th>Producto</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                            </tr>
-                            <tr>
-                                <td><img src="./images/service1.webp" alt=""></td>
-                                <td>Satelite</td>
-                                <td>20 €</td>
-                                <td>
-                                    <div class="plus-minus-button">
-                                        <button class="minus-button">−</button>
-                                        <input  class="plus-minus-input" type="number" value="1" min="1" max="8">
-                                        <button class="plus-button">+</button> 
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="./images/service2.webp" alt=""></td>
-                                <td>Euforia</td>
-                                <td>30 €</td>
-                                <td>
-                                    <div class="plus-minus-button">
-                                        <button class="minus-button">−</button>
-                                        <input  class="plus-minus-input" type="number" value="1" min="1" max="8">
-                                        <button class="plus-button">+</button> 
-                                    </div>
-                                </td>
-                            </tr>
-                    </table>
-                </div>
-
-                <div class="purchase-resume">
-                    <table>
-                        <tr>
-                            <th colspan="2">Resumen de la compra</th>
-                        </tr>
-                        <tr>
-                            <td>IVA</td>
-                            <td>5 €</td>
-                        </tr>
-                        <tr>
-                            <td>Transporte</td>
-                            <td>0 €</td>
-                        </tr>
-                        <tr>
-                            <td class="purchase-resume-total">Total</td>
-                            <td class="purchase-resume-total">55 €</td>
-                        </tr>
-                    </table>
-
+                <div class="desktop-only">
                     <div class="purchase-resume-buttons">
                         <div class="desktop-two-columns mobile-one-column">
                             <div class="column">
@@ -127,43 +132,78 @@
                                     <div class="svg-wrapper-1">
                                         <div class="svg-wrapper">
                                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                                <path fill="currentColor" d="M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M18,11H10L13.5,7.5L12.08,6.08L6.16,12L12.08,17.92L13.5,16.5L10,13H18V11Z" />
+                                                <path fill="currentColor"
+                                                    d="M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M18,11H10L13.5,7.5L12.08,6.08L6.16,12L12.08,17.92L13.5,16.5L10,13H18V11Z" />
                                             </svg>
                                         </div>
-                                      </div>
-                                      <span>Volver</span>
+                                    </div>
+                                    <span>Volver</span>
                                 </button>
                             </div>
                             <div class="column">
                                 <button>
                                     <div class="svg-wrapper-1">
                                         <div class="svg-wrapper">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
                                                 <path fill="none" d="M0 0h24v24H0z"></path>
-                                                <path fill="currentColor" d="M3 0V3H0V5H3V8H5V5H8V3H5V0H3M9 3V6H6V9H3V19C3 20.1 3.89 21 5 21H19C20.11 21 21 20.11 21 19V18H12C10.9 18 10 17.11 10 16V8C10 6.9 10.89 6 12 6H21V5C21 3.9 20.11 3 19 3H9M12 8V16H22V8H12M16 10.5C16.83 10.5 17.5 11.17 17.5 12C17.5 12.83 16.83 13.5 16 13.5C15.17 13.5 14.5 12.83 14.5 12C14.5 11.17 15.17 10.5 16 10.5Z" />
+                                                <path fill="currentColor"
+                                                    d="M3 0V3H0V5H3V8H5V5H8V3H5V0H3M9 3V6H6V9H3V19C3 20.1 3.89 21 5 21H19C20.11 21 21 20.11 21 19V18H12C10.9 18 10 17.11 10 16V8C10 6.9 10.89 6 12 6H21V5C21 3.9 20.11 3 19 3H9M12 8V16H22V8H12M16 10.5C16.83 10.5 17.5 11.17 17.5 12C17.5 12.83 16.83 13.5 16 13.5C15.17 13.5 14.5 12.83 14.5 12C14.5 11.17 15.17 10.5 16 10.5Z" />
                                             </svg>
                                         </div>
-                                      </div>
-                                      <span>Comprar</span>
+                                    </div>
+                                    <span>Comprar</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
-
-        </main>
-                    <footer>
-                <div class="footer">
-                    <div class="footer-logo">
-                        <svg viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
-                        </svg>
-                        <h1>EYE</h1>
+                <div class="mobile-only">
+                    <div class="purchase-resume-buttons-mobile">
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M18,11H10L13.5,7.5L12.08,6.08L6.16,12L12.08,17.92L13.5,16.5L10,13H18V11Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Volver</span>
+                        </button>
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M3 0V3H0V5H3V8H5V5H8V3H5V0H3M9 3V6H6V9H3V19C3 20.1 3.89 21 5 21H19C20.11 21 21 20.11 21 19V18H12C10.9 18 10 17.11 10 16V8C10 6.9 10.89 6 12 6H21V5C21 3.9 20.11 3 19 3H9M12 8V16H22V8H12M16 10.5C16.83 10.5 17.5 11.17 17.5 12C17.5 12.83 16.83 13.5 16 13.5C15.17 13.5 14.5 12.83 14.5 12C14.5 11.17 15.17 10.5 16 10.5Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Comprar</span>
+                        </button>
                     </div>
                 </div>
-            </footer>
-            <script type="module" src="./dist/main.js"></script>
-    </body>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <svg viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+                </svg>
+                <h1>EYE</h1>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./dist/main.js"></script>
+</body>
+
 </html>

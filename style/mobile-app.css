@@ -1074,12 +1074,13 @@ form .form-send-button button:active {
 .purchase-resume .purchase-resume-total {
   border-top: 1px solid white;
 }
-.purchase-resume .purchase-resume-buttons {
+.purchase-resume .purchase-resume-buttons-mobile {
   justify-content: space-between;
   padding-bottom: 1rem;
   padding-top: 1rem;
+  display: flex;
 }
-.purchase-resume .purchase-resume-buttons button {
+.purchase-resume .purchase-resume-buttons-mobile button {
   margin-top: 0.5rem;
   cursor: pointer;
   font-family: inherit;
