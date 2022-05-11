@@ -7,6 +7,7 @@ import {renderForm} from "./form.js";
 import { notificationTransition } from "./notification.js";
 import {uploadImage} from "./upload-image.js";
 import {renderCkeditor} from "./ckeditor.js";
+import {renderFaqs} from "./faqs.js";
 
 
 renderMenuButton();
@@ -18,3 +19,4 @@ renderForm();
 notificationTransition();
 uploadImage();
 renderCkeditor();
+renderFaqs();

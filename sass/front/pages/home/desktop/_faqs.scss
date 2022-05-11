@@ -1,0 +1,65 @@
+.faqs-title{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 2rem;
+
+    h3{
+        font-size: 3rem;
+    }
+}
+
+.all-faqs {
+    width: 100%;
+    background-color: black;
+    padding-top: 2rem;
+}
+
+.faqs{
+    width: 60%;
+    padding-left: 20%;
+}
+
+.faq{
+    background-color: white;
+    width: 60%;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    display: flex;
+    cursor: pointer;
+    p{
+        color: black;
+        margin-left: 5rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    svg{
+        width: 2.5rem;
+        transition: 0.5s;
+    }
+
+    &.active{
+        svg{
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+    }
+}
+
+.answer{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    transition: opacity 0.5s;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+    &.active{
+        opacity: 1;
+        height: auto;
+        
+    }
+
+}
