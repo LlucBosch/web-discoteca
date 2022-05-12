@@ -21,7 +21,9 @@
             transform: rotate(180deg);
             transition: 0.5s;
         }
+
     }
+
 }
 
 
@@ -46,17 +48,19 @@
         }
 
     }
+
 }
 
 .menu{
     
     padding-top: 0.5rem;
+    
 }
 
 .panel{
     
     background-color: black;
-    padding-left: 5rem;
+    padding-left: 0.5rem;
     padding-top: 2rem;
 }
 
@@ -66,16 +70,18 @@
     
     table{
         text-align: center;
-        width: 30%;
+        width: 95%;
+        margin-left: 2.5%;
         
         th{
             border-bottom: 1px solid white;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         td{
             padding-top: 1rem;
             font-style: italic;
+            font-size: 1rem;
         }
 
     }

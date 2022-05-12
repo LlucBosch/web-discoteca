@@ -1,63 +1,68 @@
-
-
-.ticket-images{
+.ticket-images {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    img{
-    border-radius: 8px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+
+    img {
+        border-radius: 8px;
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
     }
-    
+
 }
 
-.ticket-title{
+.ticket-title {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
     background-color: white;
-    h2{
+
+    h2 {
         color: black;
         font-size: 3rem;
     }
+
 }
-.ticket-price{
+
+.ticket-price {
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.5rem;
-    h3{
+
+    h3 {
         color: black;
     }
+
 }
 
-.ticket-text{
+.ticket-text {
     padding-top: 1rem;
     padding-right: 2.5rem;
     padding-left: 0.5rem;
     text-align: center;
-    
-    p{
+
+    p {
         color: black;
     }
-    
-    .ticket-text-description{
+
+    .ticket-text-description {
         margin-bottom: 3rem;
     }
 
-    .ticket-text-quantity-text{
+    .ticket-text-quantity-text {
         font-weight: 600;
         font-style: italic;
     }
 
-    .ticket-text-quantity-input input{
+    .ticket-text-quantity-input input {
         width: 1.5rem;
     }
+
 }
 
-    main{
+main {
     background-color: rgb(255, 255, 255);
 }
 
-.ticket-text-button{
+.ticket-text-button {
     margin-bottom: 1rem;
     margin-left: 6.5rem;
     margin-top: 0.5rem;
@@ -65,38 +70,150 @@
     button {
         @include button-effect(white);
     }
+
 }
 
 
-.tabs{
+.tabs {
     display: flex;
     margin-bottom: 1rem;
 
-    .tab{
+    .tab {
         padding: 1rem 1rem 1rem 1rem;
         align-items: center;
         cursor: pointer;
         background-color: rgb(87, 86, 86);
 
-        &.active{
-        background-color: rgb(182, 182, 182);
-        font-weight: 600;
+        &.active {
+            background-color: rgb(182, 182, 182);
+            font-weight: 600;
+        }
+
     }
+
+}
+
+.tabs-select{
+    padding-bottom: 1rem;
+
+    select{
+        height: 3rem;
+        width: 10rem;
+        font-weight: bold;
+        border-radius: 2rem;
+        text-align: center;
     }
     
 }
 
-.tab-related{
+.tab-related {
     margin-bottom: 2rem;
     margin-left: 1rem;
     display: none;
-    li{
+
+    li {
         color: black;
     }
-    li:before{ content:"-"; position:relative; left:-5px;}
 
-    &.active{
+    li:before {
+        content: "-";
+        position: relative;
+        left: -5px;
+    }
+
+    &.active {
         display: block;
     }
 
 }
+
+
+// plus minus codepen
+.plus-minus-button{
+    width: 200px;
+    margin: 0 auto;
+    
+    position: relative;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 20px;
+  }
+  .plus-minus-button input{
+    width: 100%;
+    height: 100%;
+    
+    border: none;
+    outline: none;
+    
+    background-color: transparent;
+    
+    text-align: center;
+    
+    font-size: 20px;
+  }
+  .plus-minus-button input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .plus-minus-button .plus,
+  .plus-minus-button .minus{
+    width: 36px;
+    height: 36px;
+    top: 2px;
+    background-color: rgb(0, 0, 0);
+    
+    position: absolute;
+    
+    border-radius: 50%;
+    cursor: pointer;
+    
+    border: none;
+  }
+  .plus-minus-button .plus:focus,
+  .plus-minus-button .minus:focus{
+    outline: none;
+    border: none;
+  }
+  .plus-minus-button .minus{
+    left: 3px;
+    
+  }
+  .plus-minus-button .minus:after{
+    content: "";
+    top: 50%;
+    left: 20%;
+    height: 2px;
+    width: 60%;
+    background-color: #fff;
+    position: absolute;
+    margin-top: -1px;
+    
+    border-radius: 1px;
+  }
+  .plus-minus-button .plus{
+    right: 3px;
+  }
+  .plus-minus-button .plus:after{
+    content: "";
+    top: 50%;
+    left: 20%;
+    height: 2px;
+    width: 60%;
+    background-color: #fff;
+    position: absolute;
+    margin-top: -1px;
+    
+    border-radius: 2px;
+  }
+  .plus-minus-button .plus:before{
+    content: "";
+    top: 50%;
+    left: 20%;
+    height: 2px;
+    width: 60%;
+    background-color: #fff;
+    position: absolute;
+    margin-top: -1px;
+    transform: rotate(90deg);
+    
+    border-radius: 2px;
+  }

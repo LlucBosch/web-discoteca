@@ -1,8 +1,8 @@
 export let renderPlusMinus = () => {
 
     // sumar y restar numero de ticket que quieres comprar
-    let minusButtons = document.querySelectorAll(".minus-button");
-    let plusButtons = document.querySelectorAll(".plus-button");
+    let minusButtons = document.querySelectorAll(".minus");
+    let plusButtons = document.querySelectorAll(".plus");
 
 
     plusButtons.forEach(plusButton => {

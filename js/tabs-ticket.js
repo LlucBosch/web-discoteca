@@ -1,6 +1,6 @@
 export let renderTabsTicket = () => {
 
-    // tab descripcion, caracteristicas opiniones
+    // for desktop
     let tabs = document.querySelectorAll(".tab");
     let tabRelateds = document.querySelectorAll(".tab-related")
 
@@ -28,5 +28,23 @@ export let renderTabsTicket = () => {
         });
 
     });
+
+
+    // for mobile
+    let selectTicket = document.querySelector(".select-ticket")
+
+    selectTicket.addEventListener("change", () => {
+
+        tabRelateds.forEach(tabRelated => {
+
+            tabRelated.classList.remove("active");
+
+            if(selectTicket.value == tabRelated.dataset.number) {
+                tabRelated.classList.add("active");
+            }
+            
+        });
+
+    })
 
 }
